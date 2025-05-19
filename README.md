@@ -62,13 +62,8 @@ $ python3 diffusionSnH2.py diffusionparams.csv
 Output
 -----------------------
 
-Outputs a graph of Pressure (Pa) times the Diffusion Coefficient ($m^{-2}s^{-1}$) vs the temperature in Kelvin, for each LAMMPS simulation. Plots a graph for Tin-Hydrogen interactions as found in literature. Below is an example of the earliest output, using an input file with 10 temperature steps.
+Outputs a graph of Pressure (Pa) times the Diffusion Coefficient ($m^{-2}s^{-1}$) vs the temperature in Kelvin, for each LAMMPS simulation. Plots a graph for Tin-Hydrogen interactions as found in literature. Below is an example of a generic output, using an input file with 10 temperature steps.
 
-![Sample plot with 10 temperature steps](graphs/Figure_1.png)
-
-Below is an example of an updated output, usign an input file with 10 temeprature steps, 200 Sn and 200 H2 particles, a pressure of 1.0 bar, and Lennard-Jones potential parameters. It also includes comparison data from past experiments.
-
-![Updated sample plot](graphs/200x200Particles_1.0Barr_NoIntraspecies_10Steps_798278.png)
 
 Below is an example of a graph developed from 10 tests. It plots the average value from each test at every point along with its standard deviation to two sigma. The following is a guide to get this error graph. At the end of a single test, an output file named "final_data_*pressure*_*fileseed*.txt" is created. After any number of tests of the same parameters, put all of the final_data files into a single directory and run geterrorgraph.py from within that directory. It also includes functionality for a fitted graph where it can be fit the final data up to a desired temperature. The values given_pressure and parameter_type need to be changed within the code for the titles on the graph. 
 
