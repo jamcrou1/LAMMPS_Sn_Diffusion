@@ -1,0 +1,2 @@
+Species 1,Species 2,Particle Number 1,Particle Number 2,Pressure,Pair Style,Diffusion Type,t_low,t_high,Intraspecies,num_sim
+Sn,H2,200,200,1.0,LJ,MSD,300,1000,No,10
